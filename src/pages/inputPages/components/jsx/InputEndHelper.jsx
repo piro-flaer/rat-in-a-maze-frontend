@@ -97,7 +97,6 @@ const InputEndHelper = () => {
           );
         })}
       </div>
-      <input type="text" id="testVariable" />
       <Button
         variant="contained"
         sx={{ pl: 2, pr: 2 }}
@@ -146,10 +145,6 @@ const InputEndHelper = () => {
             onClick={() => {
               sessionStorage.setItem("endRow", endRow);
               sessionStorage.setItem("endCol", endCol);
-              sessionStorage.setItem(
-                "testVariable",
-                document.querySelector("#testVariable").value
-              );
             }}
           >
             Generate Path
