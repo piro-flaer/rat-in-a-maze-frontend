@@ -43,8 +43,12 @@ const InputBlockHelper = () => {
     }
 
     blockClicked.classList.add("block-selected");
-    setBlocksRows([...blocksRows, rowIndx]);
-    setBlocksCols([...blocksCols, colIndx]);
+    const addRowIndx = blocksRows;
+    const addColIndx = blocksCols;
+    addRowIndx.push(rowIndx);
+    addColIndx.push(colIndx);
+    setBlocksRows(addRowIndx);
+    setBlocksRows(addRowIndx);
   };
 
   return (
